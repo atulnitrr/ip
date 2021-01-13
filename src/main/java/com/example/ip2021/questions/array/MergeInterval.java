@@ -31,18 +31,18 @@ public class MergeInterval {
         if (intervals.length <= 1) {
             return intervals;
         }
+
         Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
 
-        int[] currentInterval = intervals[0];
-
         List<int[]> values = new ArrayList<>();
+        int[] currentInterval= intervals[0];
 
-        for (int i = 1; i < intervals.length; i++) {
+        for (int i = 1; i < intervals.length ; i++) {
             int start = intervals[i][0];
             int end = intervals[i][1];
 
             if (start <= currentInterval[1]) {
-                currentInterval[1] = Math.max(end, currentInterval[1]);
+                currentInterval[1]= Math.max(currentInterval[1], end);
             } else {
                 values.add(currentInterval);
                 currentInterval = intervals[i];
