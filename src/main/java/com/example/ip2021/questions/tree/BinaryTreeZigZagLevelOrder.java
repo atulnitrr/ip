@@ -36,7 +36,7 @@ public class BinaryTreeZigZagLevelOrder {
         boolean leftToRight = true;
         while ( !queue.isEmpty()) {
             int levelSize = queue.size();
-            List<Integer> currentLevel = new ArrayList<>();
+            List<Integer> currentLevel = new LinkedList<>();
             for (int i = 0; i <  levelSize; i++) {
                 TreeNode poll = queue.poll();
                 if (poll == null) {
