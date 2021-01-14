@@ -21,7 +21,6 @@ package com.example.ip2021.questions.tree;
  */
 public class BSTSearch {
 
-
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return null;
