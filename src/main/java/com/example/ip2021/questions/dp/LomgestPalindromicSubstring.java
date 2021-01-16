@@ -35,7 +35,7 @@ public class LomgestPalindromicSubstring {
         }
         int maxLen = 1;
         String result = s.substring(0,1);
-        boolean dp[][] = new boolean[length][length];
+        boolean[][] dp = new boolean[length][length];
 
         for (int l = 1; l <= length ; l++) {
             for (int i = 0; i <= length -l ; i++) {
