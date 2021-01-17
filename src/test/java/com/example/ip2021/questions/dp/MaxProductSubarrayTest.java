@@ -33,7 +33,8 @@ class MaxProductSubarrayTest {
 
     @Test
     void maxProduct_35() {
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 2, 3
+        };
         System.out.println(maxProductSubarray.maxProduct(nums));
     }
 
