@@ -10,4 +10,14 @@ public class TreeUtil {
         preOrder(treeNode.left);
         preOrder(treeNode.right);
     }
+
+    public static void inOrder(TreeNode treeNode) {
+        if (treeNode == null) {
+            return;
+        }
+
+        inOrder(treeNode.left);
+        System.out.print(treeNode.val + " ");
+        inOrder(treeNode.right);
+    }
 }
