@@ -9,6 +9,8 @@ public class TownJudge_R {
         int[] inDegree = new int[N + 1];
         int[] outDegree = new int[N + 1];
 
+
+
         for (int i = 0; i < trust.length; i++) {
             inDegree[trust[i][1]]++;
             outDegree[trust[i][0]]++;
